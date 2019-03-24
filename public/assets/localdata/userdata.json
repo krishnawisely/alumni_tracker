@@ -1,0 +1,26 @@
+[
+        {
+            "name":"krishna",
+            "dept":"CSE",
+            "skills":"AngularJS",
+            "yearofjoin":"2015",
+            "yearofstudy":"1",
+            "user_img":"assets/themes/images.jpg"
+        },
+        {
+            "name":"ram",
+            "dept":"ECE",
+            "skills":"JAVA",
+            "yearofjoin":"2016",
+            "yearofstudy":"3",
+            "user_img":"assets/themes/images.jpg"
+        },
+        {
+            "name":"ragu",
+            "dept":"EEE",
+            "skills":"PHP",
+            "yearofjoin":"2012",
+            "yearofstudy":"2",
+            "user_img":"assets/themes/images.jpg"
+        }
+]

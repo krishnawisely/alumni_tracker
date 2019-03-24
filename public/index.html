@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,intial-scale=1" />
+        <title>Alumni Tracker</title>
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/ionicons.min.css">
+        <link rel="stylesheet" href="assets/css/common.css">
+    </head>
+    <body class="bg-color-body"> 
+        <div class="container h">
+            <div class="row justify-content-center h align-items-center">
+                <div class="col-sm-8 col-lg-5 text-center text-white">
+                    <h1>Alumni Tracker</h1>
+                    <p class="fs">Connecting alumni students with current students</p>
+                    <a href="#!signup" id="register_btn" class="btn btn-outline-light">Register here</a>
+                </div>
+                <div class="col-sm-8 col-lg-5 text-center">
+                    <div ng-controller="myCtrl">
+                        {{db_data.user_name}}
+                    
+                    <div class="ng-view"></div>
+                    {{username}}
+                </div>
+                </div>
+            </div>
+        </div>
+        <script src="assets/js/jquery.js"></script>
+        <script src="assets/js/angular.js"></script>
+        <script src="assets/js/angular.min.js"></script>
+        <script src="assets/js/angular-route.min.js"></script>
+        <script src="assets/js/common.js"></script>
+        <script src="assets/js/app/app.js"></script>
+        <script src="assets/js/firebase.js"></script>
+        <script src="assets/js/angularfire.min.js"></script>
+        <script>
+            // Initialize Firebase
+            var config = {
+                apiKey: "AIzaSyDqB4YwQql1W14dyqLqZHSy0FDZLn6oxUc",
+                authDomain: "alumnitracker-d4f03.firebaseapp.com",
+                databaseURL: "https://alumnitracker-d4f03.firebaseio.com",
+                projectId: "alumnitracker-d4f03",
+                storageBucket: "alumnitracker-d4f03.appspot.com",
+                messagingSenderId: "92914108282"
+            };
+            firebase.initializeApp(config);
+        </script>
+    </body>
+</html>

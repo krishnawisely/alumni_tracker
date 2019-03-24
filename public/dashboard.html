@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <title>Dashboard</title>
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/ionicons.min.css">
+        <link rel="stylesheet" href="assets/css/common.css">
+        <link rel="stylesheet" href="assets/css/dashboard.css">
+        <link rel="stylesheet" href="assets/css/nav_bar.css">
+    </head>
+    <body class="body-bg" ng-init="">
+        <!-- <div class="container"> -->
+            <!-- Navigation -->
+            <div class="nav-bar">
+                <div class="nav-header text-white">
+                    <div class="p-10 fs text-center">
+                        AlumniTracker
+                    </div>
+                </div>
+                <div class="nav-body">
+                    <ul>
+                        <li>
+                            <a href="#!dashboard">
+                                <i class="ion-ios-speedometer-outline p-left-right"></i>
+                                Dashboard
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#!user">
+                                <i class="ion-ios-person-outline p-left-right"></i>
+                                User
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="ion-ios-time-outline p-left-right"></i>
+                                Myschedule
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="ion-ios-book-outline p-left-right"></i>
+                                Courses
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Content -->
+            <div class="content">
+                <!-- <div class="logo tshadow">
+                    <div class="fs p-10">
+                        <i class="ion-drag left fs mleft nodisplay" id="grid"></i>
+                        AlumniTracker
+                        <img src="assets/themes/images.jpg" width="30px" height="30px" style="border-radius: 50%;" alt="profile">
+                        krishna
+                    </div>
+                </div> -->
+                <div class="top-nav">
+                    <ul class="nom">
+                        <li>
+                            <i class="ion-drag fs nodisplay" id="grid"></i>
+                        </li>
+                        <li style="float: right;">
+                            krishna
+                        </li>
+                        <li style="float: right;">
+                                <img src="assets/themes/images.jpg" width="30px" height="30px" class="pic" alt="profile">
+                        </li>
+                    </ul>
+                </div>
+                <div class="ng-view"></div>
+            </div>
+        <!-- </div> -->
+        <script src="assets/js/jquery.js"></script>
+        <script src="assets/js/angular.js"></script>
+        <script src="assets/js/angular.min.js"></script>
+        <script src="assets/js/angular-route.min.js"></script>
+        <script src="assets/js/firebase.js"></script>
+        <script src="assets/js/angularfire.min.js"></script>
+        <script src="assets/js/common.js"></script>
+        <script src="assets/js/app/app_dashboard.js"></script>
+        <script src="assets/js/app/app_userdata.js"></script>
+        <script>
+            // Initialize Firebase
+            var config = {
+              apiKey: "AIzaSyDqB4YwQql1W14dyqLqZHSy0FDZLn6oxUc",
+              authDomain: "alumnitracker-d4f03.firebaseapp.com",
+              databaseURL: "https://alumnitracker-d4f03.firebaseio.com",
+              projectId: "alumnitracker-d4f03",
+              storageBucket: "alumnitracker-d4f03.appspot.com",
+              messagingSenderId: "92914108282"
+            };
+            firebase.initializeApp(config);
+        </script>
+    </body>
+</html>

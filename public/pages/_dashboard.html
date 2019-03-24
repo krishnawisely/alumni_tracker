@@ -1,0 +1,112 @@
+<div class="" ng-controller="userCtrl">
+   <div class="row text-white justify-content-center p-10">
+      <div class="col-lg-4 p-top-10 text-center">
+            <div class="bg-danger">
+               <div class="row">
+                     <div class="col">
+                        <i style="font-size:40px;" class="ion-ios-people-outline"></i>
+                     </div>
+                     <div class="col">
+                        <div>20</div>
+                        <div><a href="#" class="">View</a></div>
+                     </div>
+                     <div class="w-100"></div>
+                     <div class="col p-10" style="border-top: 2px solid white;">
+                           Total Students
+                     </div>
+                  </div>
+            </div>
+      </div>
+      <div class="col-lg-4 p-top-10 text-center">
+         <div class="bg-info">
+            <div class="row">
+               <div class="col">
+                  <i style="font-size:40px;" class="ion-ios-book-outline"></i>
+               </div>
+               <div class="col">
+                  <div>
+                     20
+                  </div>
+                  <div>
+                     <a href="#" class="">View</a>
+                  </div>
+               </div>
+               <div class="w-100"></div>
+               <div class="col p-10" style="border-top: 2px solid white;">
+                     Total Courses
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="col-lg-4 p-top-10 text-center">
+         <div class="bg-secondary">
+            <div class="row">
+               <div class="col">
+                  <i style="font-size:40px;" class="ion-ios-pulse"></i>
+               </div>
+               <div class="col">
+                  <div>
+                     20
+                  </div>
+                  <div>
+                     <a href="#" class="">View</a>
+                  </div>
+               </div>
+               <div class="w-100"></div>
+               <div class="col p-10" style="border-top: 2px solid white;">
+                     Total Courses
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="w-100">
+      </div>
+      <div class="col-lg-4 p-top-10">
+         <div class="bg-dark h-content">
+            <div class="text-white text-center p-10" style="border-bottom: 2px solid white;">
+               Friends circle
+            </div>
+            <div class="p-10">
+               <div class="row m-top-10 text-white" ng-repeat="user in userdata">
+                  
+                     <div class="col">
+                        <img src="{{user.user_img}}" width="30px" height="30px" style="border-radius: 50%;" alt="">
+                     </div> 
+                     <div class="col">
+                        {{user.name}}
+                     </div>
+                     <div class="col">
+                        {{user.dept}}
+                     </div>
+                     <div class="col">
+                        <a href="#">view</a>
+                     </div>
+               
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="col-lg-8 p-top-10">
+         <div class="bg-primary h-content text-center">
+            <div class="p-10 text-white" style="border-bottom: 2px solid white;">
+               Skills
+            </div>
+         </div>
+      </div>
+      <div class="w-100">
+      </div>
+      <div class="col p-top-10">
+         <div class="bg-info">
+            <div class="text-center text-white p-10" style="border-bottom: 2px solid white;">
+               Courses suggest for you
+            </div> 
+            <div class="h-content">
+               <div ng-repeat="user in userdata" class="">
+                     {{user.skills}}
+                     {{db_data.user_name}}
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
